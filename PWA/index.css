@@ -35,11 +35,9 @@ header h1{
     color: white;
     margin-bottom: 1rem;
 }
-
 h1{
     text-align: center;
 }
-
 #new-task-form {
     display: flex;
 }
