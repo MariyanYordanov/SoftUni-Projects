@@ -10,3 +10,8 @@ Then to configure our workbox, run:
 
 	npx workbox-cli wizard
   
+In the console, you will be asked to register the root path of your application. build/ is standart enter path, then use 
+
+	build/ 
+	
+as the root path.Then, select cache all files - .html, .css, .js
