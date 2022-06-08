@@ -1,2 +1,2 @@
-# SoftUniProjects
+# SoftUni-Projects
 First projects 
