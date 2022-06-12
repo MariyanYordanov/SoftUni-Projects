@@ -1,2 +1,2 @@
-# SoftUniProjects
-First learning projects 
+# SoftUni-Projects
+First projects 
