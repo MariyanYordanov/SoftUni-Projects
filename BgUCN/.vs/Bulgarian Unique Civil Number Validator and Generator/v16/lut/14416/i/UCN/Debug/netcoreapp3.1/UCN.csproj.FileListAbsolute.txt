@@ -1,0 +1,11 @@
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\b\UCN\Debug\netcoreapp3.1\Bulgarian Unique Civil Number Validator and Generator.exe
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\b\UCN\Debug\netcoreapp3.1\Bulgarian Unique Civil Number Validator and Generator.deps.json
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\b\UCN\Debug\netcoreapp3.1\Bulgarian Unique Civil Number Validator and Generator.runtimeconfig.json
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\b\UCN\Debug\netcoreapp3.1\Bulgarian Unique Civil Number Validator and Generator.runtimeconfig.dev.json
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\b\UCN\Debug\netcoreapp3.1\Bulgarian Unique Civil Number Validator and Generator.dll
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\i\UCN\Debug\netcoreapp3.1\UCN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\i\UCN\Debug\netcoreapp3.1\UCN.AssemblyInfoInputs.cache
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\i\UCN\Debug\netcoreapp3.1\UCN.AssemblyInfo.cs
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\i\UCN\Debug\netcoreapp3.1\UCN.csproj.CopyComplete
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\i\UCN\Debug\netcoreapp3.1\Bulgarian Unique Civil Number Validator and Generator.dll
+C:\Users\Goker\source\repos\EGN\.vs\Bulgarian Unique Civil Number Validator and Generator\v16\lut\0\i\UCN\Debug\netcoreapp3.1\UCN.genruntimeconfig.cache

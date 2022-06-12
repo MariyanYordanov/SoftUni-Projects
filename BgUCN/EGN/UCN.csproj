@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Bulgarian Unique Civil Number Validator and Generator</AssemblyName>
+    <RootNamespace>UCN</RootNamespace>
+    <StartupObject>UCN.StartUp</StartupObject>
+  </PropertyGroup>
+
+</Project>
