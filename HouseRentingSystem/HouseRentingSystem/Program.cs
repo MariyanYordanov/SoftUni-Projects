@@ -37,6 +37,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseMigrationsEndPoint();
     app.UseDeveloperExceptionPage();
 }
 else
@@ -62,15 +63,15 @@ app.UseEndpoints(endpoints =>
       pattern: "{controller=Home}/{action=Index}/{id?}"
     );
 
-    endpoints.MapControllerRoute(
-      name: "areas",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
+    //endpoints.MapControllerRoute(
+    //  name: "areas",
+    //  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    //);
 
-    endpoints.MapControllerRoute(
-      name: "houseDetails",
-      pattern: "House/Details/{id}/{information}"
-    );
+    //endpoints.MapControllerRoute(
+    //  name: "houseDetails",
+    //  pattern: "House/Details/{id}/{information}"
+    //);
 
     endpoints.MapRazorPages();
 });

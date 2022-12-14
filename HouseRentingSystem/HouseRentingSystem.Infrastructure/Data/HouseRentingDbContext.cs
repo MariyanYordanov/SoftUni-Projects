@@ -10,6 +10,7 @@ namespace HouseRentingSystem.Infrastructure.Data
         public HouseRentingDbContext(DbContextOptions<HouseRentingDbContext> options)
             : base(options)
         {
+            //this.Database.Migrate();
         }
 
         public DbSet<Agent> Agents { get; set; } = null!;
