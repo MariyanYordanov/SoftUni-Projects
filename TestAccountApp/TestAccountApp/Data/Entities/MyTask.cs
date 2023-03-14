@@ -17,9 +17,11 @@ namespace TestAccountApp.Data.Entities
 
         public DateTime CreatedOn { get; set; }
 
+
         public int BoardId { get; init; }
 
         public Board Board { get; set; } = null!;
+
 
         [Required]
         public string OwnerId { get; set; } = null!;

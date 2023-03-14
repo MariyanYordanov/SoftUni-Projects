@@ -17,7 +17,7 @@ namespace TestAccountApp.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.9")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -235,36 +235,36 @@ namespace TestAccountApp.Data.Migrations
                         {
                             Id = 1,
                             BoardId = 1,
-                            CreatedOn = new DateTime(2022, 10, 3, 17, 5, 45, 176, DateTimeKind.Utc).AddTicks(9366),
+                            CreatedOn = new DateTime(2022, 10, 13, 9, 8, 25, 616, DateTimeKind.Utc).AddTicks(5025),
                             Description = "Learn ASP.NET Core Identity",
-                            OwnerId = "f62dcf96-bd46-4aa9-a273-afb40646c98a",
+                            OwnerId = "2eb28d42-b5fc-4d72-810f-a5aa974ad409",
                             Title = "Prepare for ASP.NET Core Fundamentals Exam"
                         },
                         new
                         {
                             Id = 2,
                             BoardId = 1,
-                            CreatedOn = new DateTime(2022, 6, 3, 17, 5, 45, 176, DateTimeKind.Utc).AddTicks(9384),
+                            CreatedOn = new DateTime(2022, 6, 13, 9, 8, 25, 616, DateTimeKind.Utc).AddTicks(5039),
                             Description = "Learn using EF Core and MS SQL Server Managment Studio",
-                            OwnerId = "f62dcf96-bd46-4aa9-a273-afb40646c98a",
+                            OwnerId = "2eb28d42-b5fc-4d72-810f-a5aa974ad409",
                             Title = "Improve EF Core skills"
                         },
                         new
                         {
                             Id = 3,
                             BoardId = 1,
-                            CreatedOn = new DateTime(2022, 10, 24, 17, 5, 45, 176, DateTimeKind.Utc).AddTicks(9388),
+                            CreatedOn = new DateTime(2022, 11, 3, 9, 8, 25, 616, DateTimeKind.Utc).AddTicks(5042),
                             Description = "Learn using ASP.NET Core Identity",
-                            OwnerId = "f62dcf96-bd46-4aa9-a273-afb40646c98a",
+                            OwnerId = "2eb28d42-b5fc-4d72-810f-a5aa974ad409",
                             Title = "Improve ASP.NET Core skills"
                         },
                         new
                         {
                             Id = 4,
                             BoardId = 1,
-                            CreatedOn = new DateTime(2022, 6, 3, 17, 5, 45, 176, DateTimeKind.Utc).AddTicks(9410),
+                            CreatedOn = new DateTime(2022, 6, 13, 9, 8, 25, 616, DateTimeKind.Utc).AddTicks(5064),
                             Description = "Prepare by solving old Mid and Final Exams",
-                            OwnerId = "f62dcf96-bd46-4aa9-a273-afb40646c98a",
+                            OwnerId = "2eb28d42-b5fc-4d72-810f-a5aa974ad409",
                             Title = "Prepare for C# Fundamentals Exam"
                         });
                 });
@@ -349,9 +349,9 @@ namespace TestAccountApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f62dcf96-bd46-4aa9-a273-afb40646c98a",
+                            Id = "2eb28d42-b5fc-4d72-810f-a5aa974ad409",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7181a472-5ae9-4096-ac2c-41615b790f94",
+                            ConcurrencyStamp = "cdcd07ec-6a33-4c5b-b6d4-85cf21e2276e",
                             Email = "guest@mail.com",
                             EmailConfirmed = false,
                             FirstName = "Fname",
@@ -360,12 +360,59 @@ namespace TestAccountApp.Data.Migrations
                             MyUserId = 0,
                             NormalizedEmail = "GUEST@MAIL.COM",
                             NormalizedUserName = "GUESTNAME",
-                            PasswordHash = "AQAAAAEAACcQAAAAEONAYLS7jtDjEZeBoFOxXrT7lUTzcjdQXnJvxoCYILYijPTpxIB7MCJxDlxhhP3gVA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEI1SO5MpAX2uAYo/mg+lXiwUutXw5RHEoazVQcfS3mncomm6GCR3rtEVnycsdh/zWQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6c7ca24d-aa64-41cf-a50b-8a23fe712021",
+                            SecurityStamp = "a2c553f2-022a-4d2e-ac2d-1b46451db071",
                             TwoFactorEnabled = false,
                             UserName = "GuestName"
                         });
+                });
+
+            modelBuilder.Entity("TestAccountApp.Models.BoardViewModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BoardViewModels");
+                });
+
+            modelBuilder.Entity("TestAccountApp.Models.MyTaskViewModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("BoardViewModelId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Owner")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BoardViewModelId");
+
+                    b.ToTable("MyTaskViewModels");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -438,9 +485,21 @@ namespace TestAccountApp.Data.Migrations
                     b.Navigation("Owner");
                 });
 
+            modelBuilder.Entity("TestAccountApp.Models.MyTaskViewModel", b =>
+                {
+                    b.HasOne("TestAccountApp.Models.BoardViewModel", null)
+                        .WithMany("MyTasks")
+                        .HasForeignKey("BoardViewModelId");
+                });
+
             modelBuilder.Entity("TestAccountApp.Data.Entities.Board", b =>
                 {
                     b.Navigation("Tasks");
+                });
+
+            modelBuilder.Entity("TestAccountApp.Models.BoardViewModel", b =>
+                {
+                    b.Navigation("MyTasks");
                 });
 #pragma warning restore 612, 618
         }

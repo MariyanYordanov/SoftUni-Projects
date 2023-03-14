@@ -1,0 +1,13 @@
+﻿namespace TestAccountApp.Models
+{
+    public class MyTaskViewModel
+    {
+        public int Id { get; init; }
+
+        public string Title { get; init; } = null!;
+
+        public string Description { get; init; } = null!;
+
+        public string Owner { get; init; } = null!;
+    }
+}

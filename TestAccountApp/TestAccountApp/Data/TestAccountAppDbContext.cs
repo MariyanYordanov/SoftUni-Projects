@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TestAccountApp.Controllers;
 using TestAccountApp.Data.Entities;
+using TestAccountApp.Models;
 
 namespace TestAccountApp.Data
 {
@@ -27,6 +29,12 @@ namespace TestAccountApp.Data
         public DbSet<MyTask> Tasks { get; set; } = null!;
 
         public DbSet<MyUser> MyUsers { get; set; } = null!;
+
+
+        public DbSet<BoardViewModel> BoardViewModels { get; set; } = null!;
+
+        public DbSet<MyTaskViewModel> MyTaskViewModels { get; set; } = null!;
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -67,8 +75,8 @@ namespace TestAccountApp.Data
                     Title = "Improve ASP.NET Core skills",
                     Description = "Learn using ASP.NET Core Identity",
                     CreatedOn = DateTime.UtcNow.AddDays(-10),
-                    BoardId = OpenBoard.Id,
-                    OwnerId = GuestUser.Id
+                    BoardId = this.OpenBoard.Id,
+                    OwnerId = this.GuestUser.Id
                 },
                 new MyTask()
                 {
