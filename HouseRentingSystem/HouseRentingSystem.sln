@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HouseRentingSystem.Infrastr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HouseRentingSystem.Core", "HouseRentingSystem.Core\HouseRentingSystem.Core.csproj", "{887971C3-D327-4CA0-8911-B5D0CE567138}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseRentingSystem.UnitTests", "HouseRentingSystem.UnitTests\HouseRentingSystem.UnitTests.csproj", "{9EA9AE2E-C029-45E9-A205-7AF67656A6DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{887971C3-D327-4CA0-8911-B5D0CE567138}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887971C3-D327-4CA0-8911-B5D0CE567138}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887971C3-D327-4CA0-8911-B5D0CE567138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA9AE2E-C029-45E9-A205-7AF67656A6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA9AE2E-C029-45E9-A205-7AF67656A6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA9AE2E-C029-45E9-A205-7AF67656A6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA9AE2E-C029-45E9-A205-7AF67656A6DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
